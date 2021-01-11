@@ -372,4 +372,53 @@ li {
     }
 }
 
+// LOGIN
+
+.login {
+    &__wrapper {
+        position: fixed;
+        top: calc(50% - 200px);
+        left: calc(50% - 175px);
+    }
+    &__content {
+        width: 400px;
+        height: 250px;
+        background-color: $bg;
+        border-radius: 20px;
+        display: flex;
+        align-items: centere;
+        flex-direction: column;
+        padding: 30px 20px 10px 20px;
+        h1 {
+            font-size: 18px;
+            line-height: 21px;
+            color: $text;
+            text-align: center;
+        }
+        input {
+            border: none;
+            margin-top: 40px;
+            padding: 10px;
+            outline: none;
+            border-radius: 10px;
+        }
+        button {
+            margin-top: 20px;
+            border: none;
+            background: #fff;
+            border-radius: 10px;
+            height: 30px;
+            width: 200px;
+            margin: 20px auto 0 auto;
+            cursor: pointer;
+            outline: none;
+            transition: 0.3s all ease-in-out;
+            &:hover {
+                background: $purple;
+                color: #fff;
+            }
+        }
+    }
+}
+
 @import "media";
