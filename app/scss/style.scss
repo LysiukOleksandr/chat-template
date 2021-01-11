@@ -2,7 +2,7 @@
 @import "libs";
 @import "fonts";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 // RESET CSS
 
 html,
@@ -145,6 +145,21 @@ li {
     list-style-type: none;
 }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// ASIDE HERE
+
 .aside {
     position: fixed;
     left: 0;
@@ -207,6 +222,91 @@ li {
                 font-weight: 600;
                 line-height: 21px;
                 color: $text;
+            }
+        }
+    }
+}
+
+// DIALOG
+.container {
+    padding: 0 60px;
+}
+
+.main {
+    margin-left: 260px;
+}
+.dialog {
+    &__wrapper {
+    }
+    &__title {
+        width: 130px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $purple;
+        border-radius: 14px;
+        margin: 30px auto 0 auto;
+        color: $white-text;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-name {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: $text;
+        }
+        &-message {
+            max-width: 500px;
+            padding: 16px 20px 10px 20px;
+            margin-top: 10px;
+            background: $bg;
+            border-radius: 10px;
+            &-text {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: $text;
+                font-family: "Roboto", sans-serif;
+            }
+            &-flex {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: 5px;
+            }
+            &-status {
+                margin-right: 10px;
+            }
+            &-time {
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                color: $purple;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+        &-my {
+            align-self: flex-end;
+        }
+        &-my &-name {
+            text-align: right;
+        }
+        &-my &-message {
+            background-color: $orange;
+            &-time {
+                color: $white-text;
             }
         }
     }
